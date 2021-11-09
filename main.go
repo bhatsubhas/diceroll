@@ -15,8 +15,8 @@ import (
 func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
 
-	dice := flag.String("d", "d6", "The type of the dice to roll. Format: dX, where X is an interger Default: 6")
-	numRoll := flag.Int("n", 1, "The number dice to roll. Default: 1")
+	dice := flag.String("d", "d6", "The type of the dice to roll. Format: dX, where X is an integer")
+	numRoll := flag.Int("n", 1, "The number dice to roll")
 	sum := flag.Bool("s", false, "Get the sum of all the dice rolls")
 	advantage := flag.Bool("adv", false, "Roll the dice with advantage")
 	disadvantage := flag.Bool("dis", false, "Roll the dice with disadvantage")
