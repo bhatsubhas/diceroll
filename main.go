@@ -8,13 +8,10 @@ import (
 	"regexp"
 	"sort"
 	"strconv"
-	"time"
 )
 
 // Entry point of diceroll CLI application
 func main() {
-	rand.Seed(time.Now().UTC().UnixNano())
-
 	dice := flag.String("d", "d6", "The type of the dice to roll. Format: dX, where X is an integer")
 	numRoll := flag.Int("n", 1, "The number dice to roll")
 	sum := flag.Bool("s", false, "Get the sum of all the dice rolls")
